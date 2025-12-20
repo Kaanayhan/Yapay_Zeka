@@ -1,4 +1,4 @@
-const API_KEY = process.env.API_KEY;
+const API_KEY = "424814c5e7f819892ab79f8f04e97d2a002ddf9be55f4eefa89e5ee26c014a80";
 async function send() {
   const inputEl = document.getElementById('input');
   const text = inputEl.value.trim();
@@ -32,11 +32,11 @@ async function send() {
     }
 
     const reply = data.choices[0].message.content;
-    chatbox.innerHTML += `<div><strong>AI:</strong> ${reply}</div>`;
+    chatbox.innerHTML += `<div><strong>Kaan:</strong> ${reply}</div>`;
   } catch (err) {
     console.error(err);
     chatbox.lastChild.remove();
-    chatbox.innerHTML += `<div><strong>AI:</strong> Hata: ${err.message}</div>`;
+    chatbox.innerHTML += `<div><strong>Kaan:</strong> Hata: ${err.message}</div>`;
   }
 
   chatbox.scrollTop = chatbox.scrollHeight;
