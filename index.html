@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KaanBot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icon.png" />
+</head>
+<body>    
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <div class="container">
+        <div class="chatbot">
+            <div class="chatbot-header">
+                <h1 class="chatbot-title">KaanBot</h1>
+                <p class="chatbot-subtitle">Ultra Pro Premium Version</p>
+            </div>
+            
+            <div id="chatbox"> </div>
+                
+            <div class="typing-indicator" id="typing-indicator">
+                <div class="typing-dots">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            </div>
+            
+            <div id="user-input">
+                <input type="text" id="input" placeholder="Bir şey sorun..." autocomplete="off">
+                <button class="send-button" onclick="send()">
+                    <span>➤</span>
+                </button>
+            </div>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
