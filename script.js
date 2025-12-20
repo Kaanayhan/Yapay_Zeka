@@ -44,3 +44,9 @@ async function send() {
 function toggleTheme() {
   document.body.classList.toggle('dark');
 }
+document.getElementById('input').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        send();
+    }
+});
