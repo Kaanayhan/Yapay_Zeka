@@ -1,3 +1,4 @@
+Yapay_Zeka — KaanBot (Web Chat UI) 🤖
 A lightweight frontend chat interface (“KaanBot”) built with HTML/CSS/JavaScript. It sends user messages to the Together AI Chat Completions endpoint and displays the model response in a styled chat UI.
 
 Live link (as shown on the repo page) may be unavailable currently.
